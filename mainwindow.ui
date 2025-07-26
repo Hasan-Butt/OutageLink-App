@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">/*#MainWindow{
+ background-image: url(:/images/assets/feedPageImg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="styleSheet">
+    <string notr="true">#centralStack{
+ background-image: url(:/images/assets/feedPageImg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}</string>
+   </property>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>330</x>
+      <y>10</y>
+      <width>161</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>“Segoe UI”</family>
+      <pointsize>-1</pointsize>
+      <italic>false</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel{
+/*font-size: 20px*/;
+  font: 20px “Segoe UI”, bold;
+font:bold;
+
+}</string>
+    </property>
+    <property name="text">
+     <string>📡 OutageLink</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="loginLabel">
+    <property name="geometry">
+     <rect>
+      <x>660</x>
+      <y>10</y>
+      <width>141</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>“Segoe UI”</family>
+      <pointsize>-1</pointsize>
+      <italic>false</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel{
+font: 13px “Segoe UI”;
+font:bold;
+}</string>
+    </property>
+    <property name="text">
+     <string>Login As: </string>
+    </property>
+   </widget>
+   <widget class="QStackedWidget" name="centralStack">
+    <property name="geometry">
+     <rect>
+      <x>149</x>
+      <y>120</y>
+      <width>491</width>
+      <height>401</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#FeedPageWidget{
+ background-image: url(:/images/assets/feedPageImg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}</string>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <widget class="FeedPage" name="FeedPageWidget">
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+    </widget>
+    <widget class="OutagePage" name="OutagePageWidget"/>
+    <widget class="ResourcePage" name="ResourcePageWidget"/>
+    <widget class="RequestPage" name="RequestPageWidget"/>
+    <widget class="QWidget" name="analyticsPageWidget">
+     <widget class="QWidget" name="layoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>1</x>
+        <y>0</y>
+        <width>491</width>
+        <height>401</height>
+       </rect>
+      </property>
+      <layout class="QGridLayout" name="gridLayout">
+       <item row="0" column="0">
+        <widget class="QCustomPlot" name="customPlotResources" native="true"/>
+       </item>
+       <item row="0" column="1">
+        <widget class="QCustomPlot" name="customPlotOutages" native="true"/>
+       </item>
+       <item row="1" column="0" colspan="2">
+        <widget class="QCustomPlot" name="customPlotTypes" native="true"/>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QPushButton" name="btnRequest">
+    <property name="geometry">
+     <rect>
+      <x>530</x>
+      <y>80</y>
+      <width>111</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+    background-color: #5a9;
+    border: none;
+    border-radius: 6px;
+    font: 14px “Segoe UI”, bold;
+    color: white;
+}
+QPushButton:hover {
+    background-color: #6ba;
+}
+QPushButton:pressed {
+    background-color: #498;
+}</string>
+    </property>
+    <property name="text">
+     <string>Request</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnResource">
+    <property name="geometry">
+     <rect>
+      <x>409</x>
+      <y>80</y>
+      <width>101</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+    background-color: #5a9;
+    border: none;
+    border-radius: 6px;
+    font: 14px “Segoe UI”, bold;
+    color: white;
+}
+QPushButton:hover {
+    background-color: #6ba;
+}
+QPushButton:pressed {
+    background-color: #498;
+}</string>
+    </property>
+    <property name="text">
+     <string>Resource</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnfeed">
+    <property name="geometry">
+     <rect>
+      <x>149</x>
+      <y>80</y>
+      <width>111</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+    background-color: #5a9;
+    border: none;
+    border-radius: 6px;
+    font: 14px “Segoe UI”, bold;
+    color: white;
+}
+QPushButton:hover {
+    background-color: #6ba;
+}
+QPushButton:pressed {
+    background-color: #498;
+}</string>
+    </property>
+    <property name="text">
+     <string>Feed</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnOutage">
+    <property name="geometry">
+     <rect>
+      <x>279</x>
+      <y>80</y>
+      <width>111</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+    background-color: #5a9;
+    border: none;
+    border-radius: 6px;
+    font: 14px “Segoe UI”, bold;
+    color: white;
+}
+QPushButton:hover {
+    background-color: #6ba;
+}
+QPushButton:pressed {
+    background-color: #498;
+}</string>
+    </property>
+    <property name="text">
+     <string>Outage</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnAnalytics">
+    <property name="geometry">
+     <rect>
+      <x>360</x>
+      <y>528</y>
+      <width>101</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+/* background-color:#1E90FF; /* Dodger Blue */
+   background-color: #5a9;
+    border: none;
+    border-radius: 6px;
+    font: 14px “Segoe UI”, bold;
+    color: white;
+}
+QPushButton:hover {
+    background-color: #6ba;
+}
+QPushButton:pressed {
+    background-color: #498;
+}</string>
+    </property>
+    <property name="text">
+     <string>Analytics</string>
+    </property>
+   </widget>
+   <widget class="QToolButton" name="btnAnnounce">
+    <property name="geometry">
+     <rect>
+      <x>14</x>
+      <y>8</y>
+      <width>41</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">/*QToolButton{
+background-image:url(:images/assets/announcementIcon.png);
+background-repeat: no-repeat;
+background-position: center;
+}</string>
+    </property>
+    <property name="text">
+     <string>...</string>
+    </property>
+    <property name="icon">
+     <iconset resource="resources.qrc">
+      <normaloff>:/images/assets/announcementIcon.png</normaloff>:/images/assets/announcementIcon.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>41</width>
+      <height>41</height>
+     </size>
+    </property>
+    <property name="autoRaise">
+     <bool>true</bool>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>18</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>OutagePage</class>
+   <extends>QWidget</extends>
+   <header>ui/outagepage.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>RequestPage</class>
+   <extends>QWidget</extends>
+   <header>ui/requestpage.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>ResourcePage</class>
+   <extends>QWidget</extends>
+   <header>ui/resourcepage.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>FeedPage</class>
+   <extends>QWidget</extends>
+   <header>ui/feedpage.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>QCustomPlot</class>
+   <extends>QWidget</extends>
+   <header>qcustomplot.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="resources.qrc"/>
+ </resources>
+ <connections/>
+</ui>

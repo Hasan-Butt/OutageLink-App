@@ -1,0 +1,13 @@
+# Qt build files
+build/
+*.pro.user
+*.o
+*.obj
+*.exe
+*.dll
+*.log
+*.tmp
+*.user
+
+# Node.js dependencies
+broker/node_modules/

@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>RequestPage</class>
+ <widget class="QWidget" name="RequestPage">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>555</width>
+    <height>397</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QLabel" name="label_5">
+   <property name="geometry">
+    <rect>
+     <x>11</x>
+     <y>90</y>
+     <width>101</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>“Segoe UI”</family>
+     <pointsize>-1</pointsize>
+     <italic>false</italic>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+    color: #345;
+    font: 13px “Segoe UI”;
+	font:bold;
+}</string>
+   </property>
+   <property name="text">
+    <string>📍 Location:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_4">
+   <property name="geometry">
+    <rect>
+     <x>9</x>
+     <y>47</y>
+     <width>111</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>“Segoe UI”</family>
+     <pointsize>-1</pointsize>
+     <italic>false</italic>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+    color: #345;
+    font: 13px “Segoe UI”;
+	font:bold;
+}</string>
+   </property>
+   <property name="text">
+    <string>❓ Request Item:</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnSubmit">
+   <property name="geometry">
+    <rect>
+     <x>11</x>
+     <y>126</y>
+     <width>141</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+    background-color: #5a9;
+    border: none;
+    border-radius: 6px;
+    font: 14px “Segoe UI”, bold;
+    color: white;
+}
+QPushButton:hover {
+    background-color: #6ba;
+}
+QPushButton:pressed {
+    background-color: #498;
+}</string>
+   </property>
+   <property name="text">
+    <string>✅ Submit Request</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lblStatus">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>170</y>
+     <width>301</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>“Segoe UI”</family>
+     <pointsize>-1</pointsize>
+     <italic>false</italic>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+    color: #345;
+    font: 13px “Segoe UI”;
+	font:bold;
+}</string>
+   </property>
+   <property name="text">
+    <string>Submit Request to Check Status</string>
+   </property>
+  </widget>
+  <widget class="QTableWidget" name="tblRequests">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>220</y>
+     <width>421</width>
+     <height>171</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QTableWidget {
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    gridline-color: #e0e0e0;
+    selection-background-color: #a8d5e2;
+    selection-color: #003344;
+    font: 13px &quot;Segoe UI&quot;, sans-serif;
+}
+
+/* Horizontal header */
+QHeaderView::section {
+    background-color: #f0f4f8;
+    color: #333;
+    padding: 8px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    font-weight: bold;
+}
+
+/* Vertical header (hide if desired) */
+QTableView QHeaderView::verticalHeader {
+    background: transparent;
+    border: none;
+}
+
+/* Rows */
+QTableWidget::item {
+   /* padding: 6px;*/
+}
+
+/* Alternate row coloring */
+QTableWidge {
+    alternate-background-color: #f9fcff;
+}
+
+/* Hover effect */
+QTableWidget::item:hover {
+    background-color: #d0eef7;
+}
+
+/* Selected row */
+QTableWidget::item:selected {
+    background-color: #a8d5e2;
+    color: #003344;
+}
+
+/* Remove focus rectangle */
+QTableWidget#tblResources::item:focus {
+    outline: none;
+}</string>
+   </property>
+   <property name="editTriggers">
+    <set>QAbstractItemView::EditTrigger::NoEditTriggers</set>
+   </property>
+   <property name="alternatingRowColors">
+    <bool>true</bool>
+   </property>
+   <property name="selectionBehavior">
+    <enum>QAbstractItemView::SelectionBehavior::SelectRows</enum>
+   </property>
+   <row/>
+   <row/>
+   <row/>
+   <row/>
+   <row/>
+   <row/>
+   <row/>
+   <row/>
+   <row/>
+   <column>
+    <property name="text">
+     <string>Request</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Name</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Location</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Action</string>
+    </property>
+   </column>
+   <item row="0" column="0">
+    <property name="text">
+     <string>Phone charging</string>
+    </property>
+   </item>
+   <item row="0" column="1">
+    <property name="text">
+     <string>Hasan</string>
+    </property>
+   </item>
+   <item row="0" column="2">
+    <property name="text">
+     <string>Street 5</string>
+    </property>
+   </item>
+   <item row="1" column="0">
+    <property name="text">
+     <string>Need water</string>
+    </property>
+   </item>
+   <item row="1" column="1">
+    <property name="text">
+     <string>Sarim</string>
+    </property>
+   </item>
+   <item row="1" column="2">
+    <property name="text">
+     <string>Sector F</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QLineEdit" name="editLocation">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>90</y>
+     <width>201</width>
+     <height>20</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="editRequest">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>50</y>
+     <width>201</width>
+     <height>20</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_6">
+   <property name="geometry">
+    <rect>
+     <x>11</x>
+     <y>170</y>
+     <width>71</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>“Segoe UI”</family>
+     <pointsize>-1</pointsize>
+     <italic>false</italic>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+    color: #345;
+    font: 13px “Segoe UI”;
+	font:bold;
+}</string>
+   </property>
+   <property name="text">
+    <string>ℹ️Status:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_8">
+   <property name="geometry">
+    <rect>
+     <x>11</x>
+     <y>200</y>
+     <width>171</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>“Segoe UI”</family>
+     <pointsize>-1</pointsize>
+     <italic>false</italic>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+    color: #345;
+    font: 13px “Segoe UI”;
+	font:bold;
+}</string>
+   </property>
+   <property name="text">
+    <string>📋 Current Requests:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>10</y>
+     <width>161</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>“Segoe UI”</family>
+     <pointsize>-1</pointsize>
+     <italic>false</italic>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+    color: #345;
+    font: 15px “Segoe UI”;
+	font:bold;
+}</string>
+   </property>
+   <property name="text">
+    <string>✉️ Resource Request</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

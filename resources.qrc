@@ -1,0 +1,8 @@
+<RCC>
+    <qresource prefix="/images">
+        <file>assets/loginbackground.png</file>
+        <file>assets/feedPageImg.png</file>
+        <file>assets/downArrow.png</file>
+        <file>assets/announcementIcon.png</file>
+    </qresource>
+</RCC>

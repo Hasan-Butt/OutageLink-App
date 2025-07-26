@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>OutagePage</class>
+ <widget class="QWidget" name="OutagePage">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>555</width>
+    <height>367</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <bold>false</bold>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QComboBox" name="cmbType">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>77</y>
+     <width>138</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>“Segoe UI”</family>
+     <pointsize>-1</pointsize>
+     <italic>false</italic>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QComboBox {
+    background-color: white;
+    border: 1px solid #9ab;
+    border-radius: 6px;
+    padding: 4px 8px;
+    font: 14px “Segoe UI”, sans-serif;
+    min-width: 120px;
+}
+QComboBox::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 20px;
+    border-left: 1px solid #9ab;
+}
+QComboBox::down-arrow {
+    image: url(:/images/assets/downArrow.png);
+    width: 12px; height: 12px;
+}
+</string>
+   </property>
+   <property name="currentText">
+    <string/>
+   </property>
+   <property name="currentIndex">
+    <number>-1</number>
+   </property>
+   <property name="placeholderText">
+    <string>Select Type</string>
+   </property>
+   <item>
+    <property name="text">
+     <string>⚡ Electricity</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>🌐 Internet</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>💧 Water</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>🔥 Gas</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>📶 Mobile Network</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>💡 Street Light</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>❓ Other</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QTextEdit" name="editArea">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>131</y>
+     <width>171</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QTextEdit {
+    background-color: white;
+    border: 1px solid #9ab;
+    border-radius: 6px;
+    padding: 6px;
+    font: 14px “Segoe UI”, sans-serif;
+    color: #333;
+}
+QTextEdit:focus {
+    border: 2px solid #6a9;
+}
+</string>
+   </property>
+  </widget>
+  <widget class="QTextEdit" name="editMessage">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>180</y>
+     <width>171</width>
+     <height>101</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QTextEdit {
+    background-color: white;
+    border: 1px solid #9ab;
+    border-radius: 6px;
+    padding: 6px;
+    font: 14px “Segoe UI”, sans-serif;
+    color: #333;
+}
+QTextEdit:focus {
+    border: 2px solid #6a9;
+}
+</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnSubmit">
+   <property name="geometry">
+    <rect>
+     <x>190</x>
+     <y>320</y>
+     <width>161</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#btnSubmit {
+    background-color: #5a9;
+    border: none;
+    border-radius: 6px;
+    font: 14px “Segoe UI”, bold;
+    color: white;
+}
+#btnSubmit:hover {
+    background-color: #6ba;
+}
+#btnSubmit:pressed {
+    background-color: #498;
+}</string>
+   </property>
+   <property name="text">
+    <string>Submit Report 📤</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>67</x>
+     <y>80</y>
+     <width>111</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>-1</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel{
+font-size: 14px;
+}</string>
+   </property>
+   <property name="text">
+    <string>📡 Outage Type</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>20</y>
+     <width>191</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>-1</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel{
+font-size:15px;
+}</string>
+   </property>
+   <property name="text">
+    <string>📝 Submit Outage Report</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>132</y>
+     <width>111</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>“Segoe UI”</family>
+     <pointsize>-1</pointsize>
+     <italic>false</italic>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel{
+font-size: 13px;
+}</string>
+   </property>
+   <property name="text">
+    <string>📍 Area/Location</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_4">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>180</y>
+     <width>121</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>-1</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel{
+font-size: 13px;
+}</string>
+   </property>
+   <property name="text">
+    <string>💬 Message Details</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lblStatus">
+   <property name="geometry">
+    <rect>
+     <x>190</x>
+     <y>300</y>
+     <width>181</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>“Segoe UI”</family>
+     <pointsize>-1</pointsize>
+     <italic>false</italic>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+    color: #345;
+    font: 12px “Segoe UI”;
+}</string>
+   </property>
+   <property name="text">
+    <string>📢 Status</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

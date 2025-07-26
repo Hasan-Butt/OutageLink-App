@@ -1,0 +1,68 @@
+[
+  {
+    "area": "OPF",
+    "day": 19,
+    "hour": 17,
+    "message": "Electricity not availible",
+    "minute": 8,
+    "month": 7,
+    "submittedBy": "admin",
+    "type": "⚡ Electricity",
+    "year": 2025
+  },
+  {
+    "area": "Nashaman",
+    "day": 19,
+    "hour": 17,
+    "message": "sncksncsdvd",
+    "minute": 10,
+    "month": 7,
+    "submittedBy": "sarim",
+    "type": "🌐 Internet",
+    "year": 2025
+  },
+  {
+    "area": "ncd,smc",
+    "day": 19,
+    "hour": 17,
+    "message": "cndscs",
+    "minute": 10,
+    "month": 7,
+    "submittedBy": "sarim",
+    "type": "🔥 Gas",
+    "year": 2025
+  },
+  {
+    "area": "cndskcn",
+    "day": 19,
+    "hour": 17,
+    "message": "cnsdcndsv",
+    "minute": 12,
+    "month": 7,
+    "submittedBy": "sarim",
+    "type": "💧 Water",
+    "year": 2025
+  },
+  {
+    "area": "nmsdv",
+    "day": 19,
+    "hour": 17,
+    "message": "csdklncds",
+    "minute": 13,
+    "month": 7,
+    "submittedBy": "admin",
+    "type": "🔥 Gas",
+    "year": 2025
+  },
+  {
+    "area": "gggs",
+    "day": 19,
+    "hour": 18,
+    "message": "gggs",
+    "minute": 43,
+    "month": 7,
+    "submittedBy": "admin",
+    "type": "❓ Other",
+    "year": 2025
+  }
+]
